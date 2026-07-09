@@ -34,4 +34,10 @@ jobs:
     - name: Run test Case
       run: npm test
 
+    - name: Download-Artifacts
+      uses: actions/upload-artifact@v7
+      with: 
+        name: Test-Result
+        path: test-result.xml
+
   
